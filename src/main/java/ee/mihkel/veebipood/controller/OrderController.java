@@ -1,18 +1,15 @@
 package ee.mihkel.veebipood.controller;
 
 import ee.mihkel.veebipood.dto.OrderRowDto;
-import ee.mihkel.veebipood.entity.Category;
 import ee.mihkel.veebipood.entity.Order;
-import ee.mihkel.veebipood.entity.OrderRow;
 import ee.mihkel.veebipood.repository.OrderRepository;
 import ee.mihkel.veebipood.service.OrderService;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://veebipood-frontend-02-2026.onrender.com"})
 @RestController
 @RequiredArgsConstructor
 public class OrderController {

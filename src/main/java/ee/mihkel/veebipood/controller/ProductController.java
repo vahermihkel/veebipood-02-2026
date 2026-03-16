@@ -3,13 +3,12 @@ package ee.mihkel.veebipood.controller;
 import ee.mihkel.veebipood.entity.Product;
 import ee.mihkel.veebipood.repository.ProductRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 //@CrossOrigin(origins = "*") // turvaviga ---> peame ise määratlema kes ligi pääseb
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://veebipood-frontend-02-2026.onrender.com"})
 @RestController
 @AllArgsConstructor
 public class ProductController {

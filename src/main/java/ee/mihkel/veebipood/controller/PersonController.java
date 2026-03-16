@@ -2,18 +2,15 @@ package ee.mihkel.veebipood.controller;
 
 import ee.mihkel.veebipood.dto.AuthToken;
 import ee.mihkel.veebipood.dto.PersonLoginRecord;
-import ee.mihkel.veebipood.entity.Order;
 import ee.mihkel.veebipood.entity.Person;
-import ee.mihkel.veebipood.repository.OrderRepository;
 import ee.mihkel.veebipood.repository.PersonRepository;
 import ee.mihkel.veebipood.service.PersonService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://veebipood-frontend-02-2026.onrender.com"})
 @RestController
 @AllArgsConstructor
 public class PersonController {
